@@ -123,6 +123,7 @@ kind: Deployment
 metadata:
   name: open-liberty-operator
 spec:
+  HostNetwork: true
   replicas: 1
   selector:
     matchLabels:
