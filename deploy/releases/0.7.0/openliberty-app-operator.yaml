@@ -123,7 +123,6 @@ kind: Deployment
 metadata:
   name: open-liberty-operator
 spec:
-  hostNetwork: true
   replicas: 1
   selector:
     matchLabels:
@@ -134,6 +133,7 @@ spec:
         name: open-liberty-operator
     spec:
       serviceAccountName: open-liberty-operator
+      hostNetwork: true
       containers:
         - name: open-liberty-operator
           image: openliberty/operator:0.7.0
