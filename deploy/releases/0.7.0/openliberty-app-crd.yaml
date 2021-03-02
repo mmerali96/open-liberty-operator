@@ -5,7 +5,6 @@ metadata:
     openliberty.io/day2operations: OpenLibertyTrace,OpenLibertyDump
   name: openlibertyapplications.openliberty.io
 spec:
-  hostNetwork: true
   additionalPrinterColumns:
     - JSONPath: .spec.applicationImage
       description: Absolute name of the deployed image containing registry and tag
